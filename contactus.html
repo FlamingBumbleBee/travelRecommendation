@@ -2,17 +2,16 @@
 
 <html>
     <head>
-        <title>TravelFX Recommendation Page</title>
+        <title>TravelFX Contact Us</title>
         <link rel="stylesheet" href="./travel_recommendation.css">
     </head>
 
     <body>
         <nav>
-            <h1>TravelFX Recommendation Page</h1>
+            <h1>TravelFX Contact Us</h1>
             <ul>
                 <li><a href="./travel_recommendation.html">Home</a></li>
                 <li><a href="./aboutus.html">About Us</a></li>
-                <li><a href="./contactus.html">Contact Us</a></li>
                 <li><input type="text" id="locationInput" placeholder="Enter a Location"></li>
                 <li><button id='btnSearch'>Search</button></li>
                 <li><button id='btnReset'>Reset</button></li>
@@ -29,18 +28,21 @@
                     </li>
                 </ul>
             </div>
-            <div class="column">
+            <div class="column1">
                 <h1>GET</h1>
                 <h1>IN</h1>
                 <h1>TOUCH</h1><br><br><br>
                 <p>Use the form below to get in touch with us!</p>
-                <br><br>
+            </div>
+            <div class="column1">
                 <p text-align="center">Name:</p>
-                <input type="text" id="contactName">
+                <input type="text" placeholder="Enter Name Here" id="contactName">
                 <p>Email:</p>
-                <input type="text" id="contactEmail">
+                <input type="text" placeholder="Enter Email Here" id="contactEmail">
+                <p>Message:</p>
+                <textarea name="messageText" id="messageText" cols="30" rows="10"></textarea>
                 <br><br><br>
-                <button id="btnSubmitInfo" class="btnBody">Book Now</button>
+                <button id="btnSubmitInfo" class="btnBody">Submit Info</button>
             </div>
         </div>
         <script src="./travel_recommendation.html"></script>

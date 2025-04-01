@@ -40,11 +40,33 @@ h1 {
     display: flex;
 }
 
-.column {
+.column1 {
     text-align: center;
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
     width: 35%;
+    padding-left: 5%;
+    padding-top: 15%;
+}
+
+.column2 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 35%;
+    padding-left: 5%;
+
+
+}
+
+.column3 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 85%;
+    padding-left: 5%;
+    padding-top: 15%;
+
 }
 
 p {
@@ -64,4 +86,5 @@ p {
     border-radius: 4px;
     color: rgb(26, 5, 119);
     background-color: white;
+    width: 150px;
 }
