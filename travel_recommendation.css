@@ -24,3 +24,25 @@ nav ul li {
 nav ul a {
     color: white;
 }
+
+body {
+    background-image: url("./Barcelona from top 2.JPG");
+    color: white;
+    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.column {
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    text-align: left;
+}
