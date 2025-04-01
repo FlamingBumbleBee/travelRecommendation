@@ -1,0 +1,15 @@
+/*Style Info for travel Page*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: peru;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
