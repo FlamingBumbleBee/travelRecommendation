@@ -7,9 +7,20 @@
 }
 
 nav {
-    background-color: peru;
+    background-color: rgb(26, 5, 119);
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: white
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    
+}
+
+nav ul a {
+    color: white;
 }
