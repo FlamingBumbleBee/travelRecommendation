@@ -89,6 +89,8 @@ p {
     width: 150px;
 }
 
-.destinfo {
+.destInfo {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: rgb(26,5,119);
 }
