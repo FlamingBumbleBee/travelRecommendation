@@ -11,10 +11,29 @@ function searchDest() {
             console.log(data['countries']);
             //const travelCategory = data.find(item => )
             if (input.substring(0,6) === 'countr')  {
-                for (const country of data) {
-                    console.log(data.countries.name);
-                    resultDiv.innerHTML =+ `<h2>${countries.name}</h2>`;
+                for (const country of data['countries']) {
+                    resultDiv.innerHTML += `<h2>${country.name}</h2>`;
+                    for (const city of country['cities']) {
+                        resultDiv.innerHTML += `<h3>${city.name}</h3>`;
+                        resultDiv.innerHTML += `<img src="${city.imageUrl}" width="400">`;
+                        resultDiv.innerHTML += `<p>${city.description}</p>`;
+                    }
+
                 }
+            } else if (input.substring(0,5) === 'beach') {
+                for (const beach of data['beaches']) {
+                    resultDiv.innerHTML += `<h2>${beach.name}</h2>`;
+                    resultDiv.innerHTML += `<img src="${beach.imageUrl}" width="400">`;
+                    resultDiv.innerHTML += `<p>${beach.description}</p>`;
+                }
+            } else if (input.substring(0,6) === 'temple') {
+                for (const temple of data['temples']) {
+                    resultDiv.innerHTML += `<h2>${temple.name}</h2>`;
+                    resultDiv.innerHTML += `<img src="${temple.imageUrl}" width="400">`;
+                    resultDiv.innerHTML += `<p>${temple.description}</p>`;
+                }
+            } else {
+                resultDiv.innerHTML += 'Destination not found!';
             }
         })
         .catch(error => {
